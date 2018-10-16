@@ -36,7 +36,12 @@ const Candidate = db.define('candidate', {
         msg:  'Password must be between 8 and 32 characters long.',
       },
     },
-  }, 
+  },
+  name:           Sequelize.STRING(128),
+  description:    Sequelize.String(255),
+  zipcode:        Sequelize.String(5),
+  industryWanted: Sequelize.String(128),
+  titleWanted:    Sequelize.String(128),
 });
 
 const Company = db.define('company', {
@@ -70,6 +75,12 @@ const Company = db.define('company', {
 });
 
 const Job = db.define('job', {
+  title:     Sequelize.String(128),
+  zipcode:   Sequelize.String(5),
+  startDate: Sequelize.String(128),
+  endDate:   Sequelize.String(128),
+  details:   Sequelize.String(255),
+},
 
 });
 
