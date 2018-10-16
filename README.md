@@ -1,4 +1,4 @@
-# DevJobs 
+![devjobhuntercover](https://media.git.generalassemb.ly/user/15886/files/91ae8636-d13d-11e8-9c5d-6483c634255c)
 
 ### Scope:
 
