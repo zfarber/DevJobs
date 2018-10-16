@@ -9,8 +9,7 @@
 
 ### Scope:
 
-    - We are planning to build a site that would create a place for Developers to come and find jobs, based off desired salaries, locations and position levels. 
-    - Our expectations are to build a successful website which would create a platform for Developers to find employment a place of employment. The expectation is to create this website within a week’s time.
+We are planning to build a site that would create a place for Developers to come and find employment based on desired salaries, locations and experience level.
 
 ### User Story:
 
