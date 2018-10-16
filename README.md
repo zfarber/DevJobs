@@ -1,6 +1,6 @@
 ![devjobhuntercover](https://media.git.generalassemb.ly/user/15886/files/91ae8636-d13d-11e8-9c5d-6483c634255c)
 
-### Scope:
+## Scope:
 
 We are planning to build a site that would create a place for Developers to come and find employment based on desired salaries, locations and experience level.
 
@@ -12,7 +12,7 @@ Project Planning Presentation: https://docs.google.com/presentation/d/15pjrXg5F8
 - **Daniel Mackey**
 - **Zachery Ferber**
 
-### User Stories:
+## User Stories:
 
 -  As a Developer, I would like to find a (Full-Time, Part-Time, & Contracted) position, so that I can earn a living.
 -  As a Developer, I would like to find a position that’s salary is between (x & y ), so that I can find a job within my desired salary. 
