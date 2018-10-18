@@ -9,7 +9,7 @@ const db = new Sequelize({
   },
 });
 
-const User = db.define('candidate', {
+const User = db.define('user', {
   username: {
     type:     Sequelize.STRING(32),
     validate: {
@@ -38,18 +38,18 @@ const User = db.define('candidate', {
     },
   },
   name:           Sequelize.STRING(128),
-  description:    Sequelize.String(255),
-  zipcode:        Sequelize.String(5),
-  industryWanted: Sequelize.String(128),
-  titleWanted:    Sequelize.String(128),
+  description:    Sequelize.STRING(255),
+  zipcode:        Sequelize.STRING(5),
+  industryWanted: Sequelize.STRING(128),
+  titleWanted:    Sequelize.STRING(128),
 });
 
 const Job = db.define('job', {
-  title:     Sequelize.String(128),
-  zipcode:   Sequelize.String(5),
-  startDate: Sequelize.String(128),
-  endDate:   Sequelize.String(128),
-  details:   Sequelize.String(255),
+  title:     Sequelize.STRING(128),
+  zipcode:   Sequelize.STRING(5),
+  startDate: Sequelize.STRING(128),
+  endDate:   Sequelize.STRING(128),
+  details:   Sequelize.STRING(255),
 });
 
 User.hasMany(Job);

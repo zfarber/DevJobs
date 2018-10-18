@@ -17,6 +17,9 @@
     "sequelize": "^4.39.1"
   },
   "scripts": {
+    "db": "psql devjobs",
+    "db:init": "dropdb --if-exists devjobs && createdb devjobs",
+    "db:reset": "./scripts/resetDB",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

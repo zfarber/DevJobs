@@ -11,7 +11,6 @@ const SignUp = () => {
 		        className="input"
 		        type="text" 
 		        name="username"
-		        id="newUserUsername" 
 		        placeholder="username"
 		      />
         </div>
