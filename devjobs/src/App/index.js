@@ -1,12 +1,12 @@
   import React, { Component } from 'react';
+  import { hot } from 'react-hot-loader';
   import { Switch, Route } from 'react-router-dom';
 
   import HomePage from '../HomePage';
   import Jobs from '../Jobs';
   import SignUp from '../SignUp';
 
-  class App extends Component {
-    render() {
+  const App = () => {
       return (
         <div className="container">
             <Switch>
@@ -17,6 +17,5 @@
           </div>
       );
     }
-  }
 
-  export default App;
+  export default hot(module)(App);
