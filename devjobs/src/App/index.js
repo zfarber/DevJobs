@@ -9,12 +9,11 @@
     render() {
       return (
         <div className="container">
-        <Nav>
+        <Nav />
             <Switch>
               <Route path="/" exact component={ HomePage } />
               <Route path='/jobs' component={ Jobs }/>
             </Switch>
-            </Nav>
           </div>
 
       );
