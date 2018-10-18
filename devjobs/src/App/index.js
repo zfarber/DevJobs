@@ -3,7 +3,7 @@
 
   import HomePage from '../HomePage';
   import Jobs from '../Jobs';
-  import CreateUserPage from '../CreateUserPage';
+  import SignUp from '../SignUp';
 
   class App extends Component {
     render() {
@@ -12,7 +12,7 @@
             <Switch>
               <Route path="/" exact component={ HomePage } />
               <Route path='/jobs' component={ Jobs }/>
-              <Route path='/newuser' component={ CreateUserPage } />
+              <Route path='/signup' component={ SignUp } />
             </Switch>
           </div>
       );

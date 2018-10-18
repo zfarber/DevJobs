@@ -3,7 +3,6 @@ const express           = require('express');
 const bodyParser        = require('body-parser');
 const hotMiddleware     = require('./environment');
 
-
 // start express
 const app = express();
 
@@ -13,9 +12,11 @@ app.use(bodyParser.json());
 
 app.use(hotMiddleware(app.get('env')));
 
+// REQUIRE ROUTERS
+const signUpRouter = require('./routes/signUpRouter');
 
 // ROUTE HANDLERS
-
+app.use('/signup', signUpRouter);
 
 
 // GLOBAL ERROR HANDLER
