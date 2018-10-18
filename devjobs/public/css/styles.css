@@ -1,0 +1,11 @@
+html,body {
+  background-color:white;
+  margin: 50px;
+  padding: 20px;
+}
+
+.wrapper{
+    width: 90%;
+    margin: auto;
+}
+
