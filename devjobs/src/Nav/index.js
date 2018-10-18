@@ -3,9 +3,9 @@ import React from 'react';
 export default () => (
 <div classname = "navigation">
 <nav className="navbar" role="navigation" aria-label="main navigation">
-  <div className="navbar-brand">
-    <a className="navbar-item" href="https://bulma.io">
-      <img src="/images/misc/logo.png" alt="devjobhunterlogo" width="112" height="28"/>
+  <div className="navbar-brand is-dark">
+    <a className="navbar-item-img-max-height: 100px;" href="https://devjobhunter.com">
+      <img src="/images/misc/logo.png" alt="devjobhunterlogo" width="112" height="auto"/>
     </a>
     <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
@@ -46,11 +46,10 @@ export default () => (
         </div>
       </div>
     </div>
-
     <div className="navbar-end">
       <div className="navbar-item">
         <div className="buttons">
-          <a className="button is-primary">
+          <a className="button is-warning">
             <strong>Sign up</strong>
           </a>
           <a className="button is-light">

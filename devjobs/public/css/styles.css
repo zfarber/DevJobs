@@ -1,11 +1,12 @@
 html,body {
   background-color:white;
+  padding: 10px;
 }
 
-.wrapper{
-    width: 90%;
-}
+.container {
+width: 100%;
 
+}
 .navbar {
   background-color: black;
 }

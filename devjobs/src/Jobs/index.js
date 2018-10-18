@@ -39,14 +39,14 @@ componentDidMount() {
     <div class="media-content">
       <div class="content">
         <p>
-          <strong>{jobs.company}</strong> <small>{jobs.location}</small> <small>{jobs.type}</small>
+          <strong>{jobs.company}</strong> <small>{jobs.location}</small> <small><b>{jobs.type}</b></small>
           <br />
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
         </p>
       </div>
       <nav class="level is-mobile">
         <div class="level-left">
-          <a class="level-item" aria-label="reply">
+          <a class="level-item" aria-label="apply">
             <span class="icon is-small">
               <i class="fas fa-reply" aria-hidden="true"></i>
             </span>
