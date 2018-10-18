@@ -44,6 +44,7 @@
     "bloomer": "^0.6.3",
     "bulma": "^0.7.2",
     "clean-webpack-plugin": "^0.1.19",
+    "cors": "^2.8.4",
     "css-loader": "^1.0.0",
     "dotenv": "^6.1.0",
     "extract-text-webpack-plugin": "^3.0.2",
