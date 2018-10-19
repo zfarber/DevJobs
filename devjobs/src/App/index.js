@@ -10,6 +10,7 @@ import HomePage from '../HomePage';
 import Jobs from '../Jobs';
 import SignUp from '../SignUp';
 import UserLogin from '../UserLogin';
+import PostJob from '../PostJob';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -22,6 +23,7 @@ const App = () => (
       <Route path="/jobs" component={Jobs} />
       <Route path="/signup" component={SignUp} />
       <Route path="/login" component={UserLogin} />
+      <Route path="/postjob" component={PostJob} />
     </Switch>
   </div>
 

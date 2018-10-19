@@ -17,13 +17,9 @@ export default () => (
                     </div>
                     <div id="navbarMenu" className="navbar-menu">
                         <div className="navbar-end">
+
                             <span className="navbar-item">
-                                <a className="button is-white is-outlined" href="#/jobs">
-                                    <span>Search Jobs</span>
-                                </a>
-                            </span>
-                            <span className="navbar-item">
-                                <a className="button is-white is-outlined" href="#/signup">
+                                <a className="button is-white is-outlined" href="#/PostJob">
                                     <span>Post A Job</span>
                                 </a>
                             </span>
