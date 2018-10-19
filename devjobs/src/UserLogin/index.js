@@ -14,7 +14,7 @@ export default () => (
             <form>
               <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="email" placeholder="Your Email" autoFocus="" />
+                  <input className="input is-large" type="text" placeholder="Username" autoFocus="" />
                 </div>
               </div>
 
