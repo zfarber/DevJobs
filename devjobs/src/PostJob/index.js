@@ -26,12 +26,11 @@ const PostJob = () => (
               <div className="field">
                 <div className="control">
                   <textarea class="textarea" placeholder="Job Description"></textarea>
-
                 </div>
               </div>
                 <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Job" placeholder="Location" />
+                  <input className="input is-large" type="Job" placeholder="Zipcode" />
                 </div>
               </div>
                 <div className="field">
@@ -52,7 +51,7 @@ const PostJob = () => (
     </div>
   </div>
 </div>
-              <button className="button is-block is-info is-large is-fullwidth">Submit</button>
+              <button className="button is-block is-info is-large is-fullwidth">Post Job</button>
             </form>
           </div>
         </div>
