@@ -27,14 +27,43 @@ class Jobs extends Component {
     return (
       <div className='Jobs'>
       { this.state.jobs.map(jobs =>
-      <article key = {jobs.id}>
-      <h4>Company: {jobs.company}</h4>
-      <p> Job Title: {jobs.title}</p>
-      <p> Location: {jobs.location}</p>
-      </article>)}
+      <div key = {jobs.id}>
+
+<div className="box">
+  <article className="media">
+    <div className="media-left">
+    </div>
+    <div className="media-content">
+      <div className="content">
+        <p>
+          <strong>{jobs.title}</strong> <small>{jobs.location}</small> <br /><small><b> {jobs.company}</b></small><br /><small><i> Created: {jobs.created_at}</i></small>
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+        </p>
+      </div>
+      <nav className="level is-mobile">
+        <div className="level-left">
+          <a className="level-item" aria-label="apply">
+            <span className="icon is-small">
+              <i className="fas fa-reply" aria-hidden="true"></i>
+            </span>
+          </a>
+          <a className="level-item" aria-label="like">
+            <span className="icon is-small">
+              <i className="fas fa-heart" aria-hidden="true"></i>
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </article>
+</div>
+      </div>)}
       </div>
     );
   }
 }
 
 export default Jobs;
+
+
