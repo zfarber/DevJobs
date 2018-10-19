@@ -11,10 +11,22 @@ width: 100%;
   background-color: black;
 }
 
+#feature-cards {
+margin: 15px;
+padding: 50px;
+background-color: white;
+color: black;
+}
+
 
 .img-responsive {
     height: auto;
     width: auto;
     max-height: 72px;
     max-width: 250px
+}
+
+
+h1 {
+  padding: 20px;
 }
