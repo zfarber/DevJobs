@@ -25,6 +25,7 @@ class Jobs extends Component {
     const apiEndpoint = 'https://jobs.github.com/positions.json?location=' + this.state.zipCode;
     const response = await axios.get(apiEndpoint);
     const jobs = response.data;
+    console.log(jobs);
     this.setState({
       jobs,
     });
@@ -39,6 +40,9 @@ class Jobs extends Component {
             <div className="box">
               <article className="media">
                 <div className="media-left" />
+                <figure class="image is-48x48">
+          <img src={jobs.company_logo} alt=""/>
+        </figure>
                 <div className="media-content">
                   <div className="content">
                     <p>
