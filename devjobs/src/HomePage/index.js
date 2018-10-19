@@ -5,12 +5,8 @@ function handleSubmit(props){
   return (event) => {
     event.preventDefault();
     props.history.push(`/jobs?zip=${event.target.zipcode.value}`);
-    return;
   }
 }
-
-
-
 
 const HomePage = (props) => {
   return (
