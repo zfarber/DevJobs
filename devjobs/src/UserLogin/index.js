@@ -17,7 +17,6 @@ export default () => (
                   <input className="input is-large" type="text" placeholder="Username" autoFocus="" />
                 </div>
               </div>
-
               <div className="field">
                 <div className="control">
                   <input className="input is-large" type="password" placeholder="Your Password" />
