@@ -1,11 +1,15 @@
 import { withRouter } from 'react-router-dom'
 import React, { Component } from 'react';
 
-function handleSubmit(props){
+function handleSubmit(props) {
   return (event) => {
     event.preventDefault();
     props.history.push(`/jobs?zip=${event.target.zipcode.value}`);
+
   }
+
+  };
+
 }
 
 const HomePage = (props) => {
