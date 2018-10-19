@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom'
 import axios from 'axios';
+import ReactHTMLParser from 'react-html-parser';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import './styles.css';
 import {
   faSignInAlt,
   faHeart,
@@ -66,7 +67,7 @@ Created:
                         </i>
                       </small>
                       <br />
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
+                    {ReactHTMLParser(jobs.description)}
                     </p>
                   </div>
                   <nav className="level is-mobile">
