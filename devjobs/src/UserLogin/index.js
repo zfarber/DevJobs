@@ -1,15 +1,16 @@
 import React from 'react';
+import brand from '../nav/logo128.png';
 
 export default () => (
   <section className="hero is-light is-fullheight">
     <div className="hero-body">
       <div className="container has-text-centered">
         <div className="column is-4 is-offset-4">
-          <h3 className="title has-text-grey">Login</h3>
-          <p className="subtitle has-text-grey">Please login to proceed.</p>
+          <h3 className="title has-text-black">Job Seeker Login </h3>
+          <p className="subtitle has-text-black">Please login to proceed.</p>
           <div className="box">
             <figure className="avatar">
-              <img src="./images/misc/logo128.png" />
+              <img src={brand} />
             </figure>
             <form>
               <div className="field">
