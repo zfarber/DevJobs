@@ -52,8 +52,13 @@ const Job = db.define('job', {
   details: Sequelize.STRING(255),
 });
 
-User.hasMany(Job);
-Job.belongsTo(User);
+
+User.belongsToMany(Job, { through: 'user_job_xref' });
+Job.belongsToMany(User, { through: 'user_job_xref' });
+
+User.belongsToMany(Job);
+Job.belongsToMany(User);
+
 
 module.exports = {
   User,
