@@ -19,14 +19,15 @@ export default () => (
                         <div className="navbar-end">
                             <span className="navbar-item">
                                 <a className="button is-white is-outlined" href="#/login">
-                                    <span>Login</span>
+                                    <span>Find A Job</span>
                                 </a>
                             </span>
                             <span className="navbar-item">
                                 <a className="button is-white is-outlined" href="#/signup">
-                                    <span>Sign Up</span>
+                                    <span>Post A Job</span>
                                 </a>
                             </span>
+
                         </div>
                     </div>
                 </div>
