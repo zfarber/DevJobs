@@ -1,8 +1,19 @@
 import React from 'react';
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarItem,
+  NavbarStart,
+  NavbarEnd,
+  NavbarLink,
+  NavbarDropdown,
+  NavbarDivider,
+} from 'bloomer';
+
 
 export default () => (
 <div className="hero-head">
-            <nav className="navbar">
+            <nav className="navbar is-dark">
                 <div className="container">
                     <div className="navbar-brand">
                         <a className="navbar-item" href="/">
@@ -18,17 +29,11 @@ export default () => (
                         <div className="navbar-end">
                             <span className="navbar-item">
                                 <a className="button is-white is-outlined" href="#">
-                                    <span className="icon">
-                                        <i className="fa fa-book"></i>
-                                    </span>
                                     <span>Recruiters</span>
                                 </a>
                             </span>
                             <span className="navbar-item">
                                 <a className="button is-white is-outlined" href="#">
-                                    <span className="icon">
-                                        <i className="fa fa-book"></i>
-                                    </span>
                                     <span>Job Seekers</span>
                                 </a>
                             </span>
@@ -38,6 +43,3 @@ export default () => (
             </nav>
             </div>
 );
-
-
-

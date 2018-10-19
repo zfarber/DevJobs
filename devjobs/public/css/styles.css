@@ -16,9 +16,5 @@ width: 100%;
     height: auto;
     width: auto;
     max-height: 72px;
-    max-width: 250px;
-}
-
-  .hero.is-info.is-bold {
-   background-image: url('./images/misc/headerCode.jpg') !important;
+    max-width: 250px
 }

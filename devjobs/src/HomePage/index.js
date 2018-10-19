@@ -11,7 +11,7 @@ import React, { Component } from 'react';
                             Find Development Jobs.
                         </h1>
                         <h2 className="subtitle">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         </h2>
                         <div className="box">
                             <div className="field is-grouped">
