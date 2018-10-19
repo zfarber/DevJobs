@@ -14,9 +14,11 @@ app.use(hotMiddleware(app.get('env')));
 
 // REQUIRE ROUTERS
 const signUpRouter = require('./routes/signUpRouter');
+const jobRouter = require('./routes/jobRouter');
 
 // ROUTE HANDLERS
 app.use('/signup', signUpRouter);
+app.use('/job', jobRouter);
 
 
 // GLOBAL ERROR HANDLER

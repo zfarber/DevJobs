@@ -45,7 +45,7 @@ const User = db.define('user', {
 });
 
 const Job = db.define('job', {
-  companyImgage: Sequelize.STRING(),
+  companyImage: Sequelize.STRING(),
   companyName: Sequelize.STRING(128),
   jobTitle: Sequelize.STRING(64),
   description: Sequelize.STRING(),

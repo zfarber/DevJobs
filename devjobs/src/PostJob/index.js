@@ -3,34 +3,34 @@ import React from 'react';
 const PostJob = () => (
   <div className="CreateUserPage">
     <h2 className="title">Account Sign In</h2>
-    <form method="post" action="/signup">
+    <form method="post" action="/job">
       <div className="field">
-        <label>Username: </label>
+        <label>Company Image: </label>
         <input
           className="input"
           type="text"
-          name="username"
-          placeholder="username"
+          name="companyImage"
+          placeholder="image_url"
         />
       </div>
 
       <div className="field">
-        <label>Password: </label>
+        <label>Company Name: </label>
         <input
           className="input"
           type="text"
-          name="password"
-          placeholder="password"
+          name="companyName"
+          placeholder="Comapny"
         />
       </div>
 
       <div className="field">
-        <label>Full Name: </label>
+        <label>Job Title: </label>
         <input
           className="input"
           type="text"
-          name="name"
-          placeholder="John Doe"
+          name="jobTitle"
+          placeholder="Senior Web Developer"
         />
       </div>
 
@@ -40,42 +40,31 @@ const PostJob = () => (
           className="input"
           type="text"
           name="description"
-          placeholder="I am a web developer..."
+          placeholder="Job description"
         />
       </div>
 
       <div className="field">
-        <label>Zipcode: </label>
+        <label>Location: </label>
         <input
           className="input"
           type="text"
-          name="zipcode"
-          placeholder="10011"
+          name="location"
+          placeholder="New York, NY"
         />
       </div>
 
       <div className="field">
-        <label>Desired Industry: </label>
+        <label>Type: </label>
         <input
           className="input"
           type="text"
-          name="industryWanted"
-          placeholder="Software Development"
+          name="type"
+          placeholder="Full Time"
         />
       </div>
-
-      <div className="field">
-        <label>Desired Title: </label>
-        <input
-          className="input"
-          type="text"
-          name="titleWanted"
-          placeholder="Junior Web Developer"
-        />
-      </div>
-
       <div className="control">
-        <button type="submit" className="button">Add User</button>
+        <button type="submit" className="button">Add Job</button>
       </div>
     </form>
   </div>

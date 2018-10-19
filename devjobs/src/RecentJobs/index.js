@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import placeholder from './placeholder.png';
 
-
-
 export default () => (
 <div className="row columns has-background-white">
                 <div className="column is-one-third ">
