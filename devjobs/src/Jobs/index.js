@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom'
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import {
+  faSignInAlt,
+  faHeart,
+} from '@fortawesome/free-solid-svg-icons';
 
 class Jobs extends Component {
   constructor(props) {
@@ -63,13 +69,11 @@ Created:
                     <div className="level-left">
                       <a className="level-item" aria-label="apply">
                         <span className="icon is-small">
-                          <i className="fas fa-reply" aria-hidden="true" />
-                        </span>
+                       <FontAwesomeIcon icon={faSignInAlt} /> </span>
                       </a>
-                      <a className="level-item" aria-label="like">
+                       <a className="level-item" aria-label="apply">
                         <span className="icon is-small">
-                          <i className="fas fa-heart" aria-hidden="true" />
-                        </span>
+                       <FontAwesomeIcon icon={faHeart} /> </span>
                       </a>
                     </div>
                   </nav>

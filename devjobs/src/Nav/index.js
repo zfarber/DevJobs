@@ -6,7 +6,7 @@ export default () => (
             <nav className="navbar is-black">
                 <div className="container">
                     <div className="navbar-brand">
-                        <a className="navbar-item" href="/">
+                        <a className="navbar-item" href="#/">
                             <img src={brand} className="img-responsive" alt="Logo" />
                         </a>
                         <span className="navbar-burger burger" data-target="navbarMenu">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const SignUp = () => (
   <div className="CreateUserPage">
-    <h2 className="title">Create New User</h2>
+    <h2 className="title">Account Sign In</h2>
     <form method="post" action="/signup">
       <div className="field">
         <label>Username: </label>
