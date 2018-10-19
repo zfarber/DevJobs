@@ -1,7 +1,7 @@
 require('dotenv').config();
-const express           = require('express');
-const bodyParser        = require('body-parser');
-const hotMiddleware     = require('./environment');
+const express = require('express');
+const bodyParser = require('body-parser');
+const hotMiddleware = require('./environment');
 
 // start express
 const app = express();

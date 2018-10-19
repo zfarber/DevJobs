@@ -1,23 +1,23 @@
-const path                     = require('path');
-const HtmlWebpackPlugin        = require('html-webpack-plugin');
-const ExtractTextPlugin        = require('extract-text-webpack-plugin');
-const htmlTemplate             = require('html-webpack-template');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const htmlTemplate = require('html-webpack-template');
 const { webpack_build: build } = require('./package');
 
-const entryPoint  = path.resolve(__dirname, build.entry);
+const entryPoint = path.resolve(__dirname, build.entry);
 
-const OUTPUT_DIR  = path.resolve(__dirname, build.output);
+const OUTPUT_DIR = path.resolve(__dirname, build.output);
 
 
 const htmlConfig = {
-  title:      build.title,
+  title: build.title,
   appMountId: build.react_mount_root,
 };
 
 /** ************ */
 
 const fontLoaderConfig = {
-  name:  'fonts/[name].[ext]',
+  name: 'fonts/[name].[ext]',
   limit: 100,
 };
 
@@ -25,7 +25,7 @@ const fontLoaderConfig = {
 if (!('NODE_ENV' in process.env)) require('dotenv').config();
 
 module.exports = {
-  mode:  process.env.NODE_ENV,
+  mode: process.env.NODE_ENV,
   entry: {
     main: [
       entryPoint,
@@ -33,14 +33,14 @@ module.exports = {
 
   },
   output: {
-    path:       OUTPUT_DIR,
-    filename:   'js/[name].js',
+    path: OUTPUT_DIR,
+    filename: 'js/[name].js',
     publicPath: '/',
   },
-  cache:   true,
+  cache: true,
   devtool: 'inline-source-map',
-  stats:   {
-    colors:  true,
+  stats: {
+    colors: true,
     reasons: true,
   },
   resolve: {
@@ -55,9 +55,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       ...htmlConfig,
-      xhtml:    true,
-      inject:   false,
-      favicon:  'favicon.ico',
+      xhtml: true,
+      inject: false,
+      favicon: 'favicon.ico',
       template: htmlTemplate,
     }),
     new ExtractTextPlugin('css/[name].css', {
@@ -69,12 +69,12 @@ module.exports = {
     rules: [
       {
         test: /\.s(a|c)ss$/,
-        use:  [{
+        use: [{
           loader: 'style-loader', // inject CSS to page
         }, {
           loader: 'css-loader', // translates CSS into CommonJS modules
         }, {
-          loader:  'postcss-loader', // Run post css actions
+          loader: 'postcss-loader', // Run post css actions
           options: {
             plugins() { // post css plugins, can be exported to postcss.config.js
               return [
@@ -89,22 +89,22 @@ module.exports = {
       },
       {
         test: /\.jsx?$/,
-        use:  [{
+        use: [{
           loader: 'babel-loader',
         }],
         exclude: /node_modules/,
       },
       {
         test: /\.css$/,
-        use:  ExtractTextPlugin.extract({
+        use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use:      'css-loader',
+          use: 'css-loader',
         }),
       },
       {
         test: /\.(png|gif|jpg)$/,
-        use:  [{
-          loader:  'file-loader',
+        use: [{
+          loader: 'file-loader',
           options: {
             name: 'images/[name].[ext]',
           },
@@ -112,8 +112,8 @@ module.exports = {
       },
       {
         test: /\.ico$/,
-        use:  [{
-          loader:  'file-loader',
+        use: [{
+          loader: 'file-loader',
           options: {
             name: '/[name].[ext]',
           },
@@ -121,8 +121,8 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-        use:  [{
-          loader:  'url-loader',
+        use: [{
+          loader: 'url-loader',
           options: {
             ...fontLoaderConfig,
             mimetype: 'application/font-woff',
@@ -131,8 +131,8 @@ module.exports = {
       },
       {
         test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-        use:  [{
-          loader:  'url-loader',
+        use: [{
+          loader: 'url-loader',
           options: {
             ...fontLoaderConfig,
             mimetype: 'application/octet-stream',
@@ -141,15 +141,15 @@ module.exports = {
       },
       {
         test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-        use:  [{
-          loader:  'file-loader',
+        use: [{
+          loader: 'file-loader',
           options: fontLoaderConfig,
         }],
       },
       {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        use:  [{
-          loader:  'url-loader',
+        use: [{
+          loader: 'url-loader',
           options: {
             ...fontLoaderConfig,
             mimetype: 'mimetype=image/svg+xml',
