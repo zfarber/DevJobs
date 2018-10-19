@@ -29,31 +29,29 @@ componentDidMount() {
   	  <div className='Jobs'>
       { this.state.jobs.map(jobs =>
       <div key = {jobs.id}>
-<div class="box">
-  <article class="media">
-    <div class="media-left">
-      <figure class="image is-64x64">
-        <img src={jobs.company_logo} alt="Image"/>
-      </figure>
+
+<div className="box">
+  <article className="media">
+    <div className="media-left">
     </div>
-    <div class="media-content">
-      <div class="content">
+    <div className="media-content">
+      <div className="content">
         <p>
-          <strong>{jobs.company}</strong> <small>{jobs.location}</small> <small><b>{jobs.type}</b></small>
+          <strong>{jobs.title}</strong> <small>{jobs.location}</small> <br /><small><b> {jobs.company}</b></small><br /><small><i> Created: {jobs.created_at}</i></small>
           <br />
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla egestas. Nullam condimentum luctus turpis.
         </p>
       </div>
-      <nav class="level is-mobile">
-        <div class="level-left">
-          <a class="level-item" aria-label="apply">
-            <span class="icon is-small">
-              <i class="fas fa-reply" aria-hidden="true"></i>
+      <nav className="level is-mobile">
+        <div className="level-left">
+          <a className="level-item" aria-label="apply">
+            <span className="icon is-small">
+              <i className="fas fa-reply" aria-hidden="true"></i>
             </span>
           </a>
-          <a class="level-item" aria-label="like">
-            <span class="icon is-small">
-              <i class="fas fa-heart" aria-hidden="true"></i>
+          <a className="level-item" aria-label="like">
+            <span className="icon is-small">
+              <i className="fas fa-heart" aria-hidden="true"></i>
             </span>
           </a>
         </div>

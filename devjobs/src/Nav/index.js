@@ -1,66 +1,42 @@
 import React from 'react';
 
 export default () => (
-<div classname = "navigation">
-<nav className="navbar" role="navigation" aria-label="main navigation">
-  <div className="navbar-brand is-dark">
-    <a className="navbar-item-img-max-height: 100px;" href="https://devjobhunter.com">
-      <img src="/images/misc/logo.png" alt="devjobhunterlogo" width="112" height="auto"/>
-    </a>
-    <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" className="navbar-menu">
-    <div className="navbar-start">
-      <a className="navbar-item">
-        Home
-      </a>
-
-      <a className="navbar-item">
-        Documentation
-      </a>
-
-      <div className="navbar-item has-dropdown is-hoverable">
-        <a className="navbar-link">
-          More
-        </a>
-
-        <div className="navbar-dropdown">
-          <a className="navbar-item">
-            About
-          </a>
-          <a className="navbar-item">
-            Jobs
-          </a>
-          <a className="navbar-item">
-            Contact
-          </a>
-          <hr className="navbar-divider"/>
-          <a className="navbar-item">
-            Report an issue
-          </a>
-        </div>
-      </div>
-    </div>
-    <div className="navbar-end">
-      <div className="navbar-item">
-        <div className="buttons">
-          <a className="button is-warning">
-            <strong>Sign up</strong>
-          </a>
-          <a className="button is-light">
-            Log in
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</nav>
-</div>
+<div className="hero-head">
+            <nav className="navbar">
+                <div className="container">
+                    <div className="navbar-brand">
+                        <a className="navbar-item" href="/">
+                            <img src="./images/misc/logo.png" className="img-responsive" alt="Logo" />
+                        </a>
+                        <span className="navbar-burger burger" data-target="navbarMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" className="navbar-menu">
+                        <div className="navbar-end">
+                            <span className="navbar-item">
+                                <a className="button is-white is-outlined" href="#">
+                                    <span className="icon">
+                                        <i className="fa fa-book"></i>
+                                    </span>
+                                    <span>Recruiters</span>
+                                </a>
+                            </span>
+                            <span className="navbar-item">
+                                <a className="button is-white is-outlined" href="#">
+                                    <span className="icon">
+                                        <i className="fa fa-book"></i>
+                                    </span>
+                                    <span>Job Seekers</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            </div>
 );
 
 
