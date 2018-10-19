@@ -11,13 +11,13 @@ describe('Test the root path', () => {
 describe('#/signup', () => {
   it('should not respond to the GET method', async () => {
     const res = await request(app)
-      .get('/signup');
+      .get('/signup/');
     expect(res.statusCode).toEqual(404);
   });
 
   it('should POST a new user', async () => {
     const res = await request(app)
-      .post('/signup')
+      .post('/signup/')
       .set('Content-Type', 'application/json')
       .set('Accept', 'application/json')
       .send({

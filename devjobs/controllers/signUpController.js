@@ -2,7 +2,6 @@ const db = require('../models');
 
 module.exports = {
   addUser(req, res, next) {
-    debugger;
     db.User.create({
       username:       req.body.username,
       password:       req.body.password,
