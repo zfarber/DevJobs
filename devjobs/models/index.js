@@ -45,11 +45,12 @@ const User = db.define('user', {
 });
 
 const Job = db.define('job', {
-  title: Sequelize.STRING(128),
-  zipcode: Sequelize.STRING(5),
-  startDate: Sequelize.STRING(128),
-  endDate: Sequelize.STRING(128),
-  details: Sequelize.STRING(255),
+  companyImgage: Sequelize.STRING(),
+  companyName: Sequelize.STRING(128),
+  jobTitle: Sequelize.STRING(64),
+  description: Sequelize.STRING(),
+  location: Sequelize.STRING(64),
+  type: Sequelize.STRING(16),
 });
 
 

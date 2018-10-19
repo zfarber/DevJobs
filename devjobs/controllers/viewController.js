@@ -1,5 +1,9 @@
 module.exports = {
   goToLogin(req, res) {
-    res.redirect('/');
+    res.redirect('/#/login');
+  },
+
+  goToHomePage(req, res) {
+    res.redirect('/#/');
   },
 };
