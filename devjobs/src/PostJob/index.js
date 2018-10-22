@@ -12,7 +12,7 @@ const PostJob = () => (
             <figure className="avatar is-128x128">
               <img src={brand}/>
             </figure>
-            <form>
+            <form method="POST" action="/job">
               <div className="field">
                 <div className="control">
                   <input className="input is-large" type="text" name="companyName" placeholder="Company Name" autoFocus="" />
