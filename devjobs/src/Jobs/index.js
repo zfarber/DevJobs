@@ -49,7 +49,7 @@ class Jobs extends Component {
                     <p>
                       <strong>{jobs.title}</strong>
                       {' '}
-                      <small>{jobs.location}</small>
+                      <small>{jobs.location} {jobs.type}</small>
                       {' '}
                       <br />
                       <small>
