@@ -33,7 +33,7 @@ Project Planning Presentation: https://docs.google.com/presentation/d/15pjrXg5F8
 - Bloomer
 - GitHub Jobs API
 
-##Code Snippet Sample:
+## Code Snippet Sample:
 
 ```
 class Jobs extends Component {
