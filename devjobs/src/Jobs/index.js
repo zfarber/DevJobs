@@ -72,10 +72,11 @@ Created:
                   </div>
                   <nav className="level is-mobile">
                     <div className="level-left">
-                      <a className="level-item" aria-label="apply">
+                      <a className="level-item" href={jobs.url} aria-label="apply">
                         <span className="icon is-small">
                        <FontAwesomeIcon icon={faSignInAlt} /> </span>
                       </a>
+
                        <a className="level-item" aria-label="apply">
                         <span className="icon is-small">
                        <FontAwesomeIcon icon={faHeart} /> </span>
