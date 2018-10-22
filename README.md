@@ -11,7 +11,7 @@ Project Planning Presentation: https://docs.google.com/presentation/d/15pjrXg5F8
 ## Developers
 - **Shaun Dawson**
 - **Daniel Mackey**
-- **Zachery Ferber**
+- **Zachary Farber**
 
 ## User Stories:
 
