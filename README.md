@@ -3,7 +3,7 @@
 
 ## Scope:
 
-We are planning to build a site that would create a place for Developers to come and find employment based on desired salaries, locations and experience level.
+DevJobHunter is a platform for developers to find employment based on location. Job seekers create a user profile in which recruiters can browse.  
 
 Project Planning Presentation: https://docs.google.com/presentation/d/15pjrXg5F8wW64l_J2Is_juBt5S4iJJhT8FXnYBl1dAs/edit?usp=sharing
 
