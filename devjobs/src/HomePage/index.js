@@ -92,10 +92,10 @@ const HomePage = (props) => {
             </h2>
             <div className="box">
               <div className="field is-grouped">
-                <form className="control is-expanded" onSubmit={(event) => handleSubmit(props)(event)}>
+                <form className="control is-expanded " onSubmit={(event) => handleSubmit(props)(event)}>
                   <input name="zipcode" className="input" type="text" placeholder="Enter your zipcode" />
                   <div>
-                    <p className="control">
+                    <p className="control has-text-centered" >
                       <button className="button is-info" type="submit">
                         Find Jobs
                       </button>

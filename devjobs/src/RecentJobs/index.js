@@ -25,7 +25,10 @@ export default () => (
                                 </div>
                             </div>
                             <div className="content">
-Our firm is looking for a creative software engineer to join us. This individual will be working on the information systems that support the global sales and marketing organization. This role will work closely with business owners, internal clients, and the development team.                                <div className="background-icon"><span className="icon-twitter"></span></div>
+Our firm is looking for a creative software engineer to join us. This individual will be working on the information systems that support the global sales and marketing organization. This role will work closely with business owners, internal clients, and the development team. Responsible for...
+ <div className="background-icon"><span className="icon-twitter"></span></div>
+  <a class="button is-info is-outlined">Apply</a>
+
                             </div>
                         </div>
                     </div>
@@ -48,8 +51,9 @@ Our firm is looking for a creative software engineer to join us. This individual
                                 </div>
                             </div>
                             <div className="content">
-                               You’ll join The Atlantic’s marketing family: a small, passionate, scrappy group of idealists, realists, thinkers, and doers. In your role, you’ll be central in the building of bespoke digital experiences that range from articles, interactive experiences and digital products
+                               You’ll join The Atlantic’s marketing family: a small, passionate, scrappy group of idealists, realists, thinkers, and doers. In your role, you’ll be central in the building of bespoke digital experiences that range from articles, interactive experiences and digital products. You’re a problem solver, tinkerer, and...
                                 <div className="background-icon"><span className="icon-facebook"></span></div>
+                                <a class="button is-info is-outlined">Apply</a>
                             </div>
                         </div>
                     </div>
@@ -72,8 +76,9 @@ Our firm is looking for a creative software engineer to join us. This individual
                                 </div>
                             </div>
                             <div className="content">
-                            We are seeking a Web Developer - someone who has significant Java client side, web, multithreading, multi-user, and n-tier application development experience. This is a New York based position, requiring someone who has the aspiration to break into the financial services industry.
+                            We are seeking a Web Developer - someone who has significant Java client side, web, multithreading, multi-user, and n-tier application development experience. This is a New York based position, requiring someone who has the aspiration to break into the financial services industry
                                 <div className="background-icon"><span className="icon-facebook"></span></div>
+                                <a class="button is-info is-outlined">Apply</a>
                             </div>
                         </div>
                     </div>
