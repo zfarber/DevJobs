@@ -4,7 +4,7 @@ const jobController = require('../controllers/jobController');
 
 const jobRouter = express.Router({ mergeParams: true });
 
-jobRouter.route('/:director_id')
+jobRouter.route('/:job_id')
   .get(jobController.getOne)
   .put(jobController.update)
   // , viewController.handleUpdate, viewController.badCreate)

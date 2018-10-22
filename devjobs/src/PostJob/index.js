@@ -15,33 +15,33 @@ const PostJob = () => (
             <form>
               <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="text" placeholder="Company Name" autoFocus="" />
+                  <input className="input is-large" type="text" name="companyName" placeholder="Company Name" autoFocus="" />
                 </div>
               </div>
               <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Job" placeholder="Job Title" />
+                  <input className="input is-large" type="Job" name="jobTitle" placeholder="Job Title" />
                 </div>
               </div>
               <div className="field">
                 <div className="control">
-                  <textarea class="textarea" placeholder="Job Description"></textarea>
+                  <textarea class="textarea" name="description" placeholder="Job Description"></textarea>
                 </div>
               </div>
                 <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Job" placeholder="Zipcode" />
+                  <input className="input is-large" type="Job" name="location" placeholder="Zipcode" />
                 </div>
               </div>
                 <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Job" placeholder="Logo Image URL" />
+                  <input className="input is-large" type="Job" name="companyImage" placeholder="Logo Image URL" />
                 </div>
               </div>
               <div class="field">
   <div class="control">
     <div class="select is-primary">
-      <select>
+      <select name="type">
         <option>Type</option>
         <option>Full Time</option>
         <option>Part Time</option>

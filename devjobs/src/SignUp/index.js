@@ -12,36 +12,36 @@ const SignUp = () => (
             <figure className="avatar is-128x128">
               <img src={brand}/>
             </figure>
-            <form>
+            <form method="POST" action="/signup">
               <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="text" placeholder="Username" autoFocus="" />
+                  <input className="input is-large" type="text" name="username" placeholder="Username" autoFocus="" />
                 </div>
               </div>
               <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Job" placeholder="Password" />
+                  <input className="input is-large" type="Job" name="password" placeholder="Password" />
                 </div>
               </div>
               <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Job" placeholder="Full Name" />
+                  <input className="input is-large" type="Job" name="name" placeholder="Full Name" />
                 </div>
               </div>
                 <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Zipcode" placeholder="Zipcode" />
+                  <input className="input is-large" type="Zipcode" name="zipcode" placeholder="Zipcode" />
                 </div>
               </div>
                 <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Deired Title" placeholder="Desired Job Title" />
+                  <input className="input is-large" type="Deired Title" name="description" placeholder="Desired Job Title" />
                 </div>
               </div>
               <div class="field">
   <div class="control">
     <div class="select is-primary">
-      <select>
+      <select name="industryWanted">
         <option>Preferred Industry</option>
          <option>Information Technology</option>
          <option>Software as a service (SaaS) development </option>
@@ -57,7 +57,7 @@ const SignUp = () => (
               <div class="field">
   <div class="control">
     <div class="select is-primary">
-      <select>
+      <select name="titleWanted">
         <option>Specialization</option>
         <option>Full Stack Developer</option>
         <option>Front End Developer</option>
