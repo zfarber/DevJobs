@@ -25,11 +25,13 @@ const HomePage = (props) => {
               <div className="field is-grouped">
                 <form className="control is-expanded" onSubmit={(event) => handleSubmit(props)(event)}>
                   <input name="zipcode" className="input" type="text" placeholder="Enter your zipcode" />
-                  <p className="control">
-                    <button className="button is-info" type="submit">
-                      Find Jobs
-                    </button>
-                  </p>
+                  <div>
+                    <p className="control">
+                      <button className="button is-info" type="submit">
+                        Find Jobs
+                      </button>
+                    </p>
+                  </div>
                </form>
               </div>
             </div>

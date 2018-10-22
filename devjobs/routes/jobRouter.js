@@ -4,10 +4,18 @@ const jobController = require('../controllers/jobController');
 
 const jobRouter = express.Router({ mergeParams: true });
 
-jobRouter.route('/')
-  .post(jobController.addJob, viewController.goToHomePage);
+jobRouter.route('/:director_id')
+  .get(jobController.getOne)
+  .put(jobController.update)
+  // , viewController.handleUpdate, viewController.badCreate)
+  .delete(jobController.destroy);
 
-jobRouter.use((err, req, res, next) => {
+jobRouter.route('/')
+  .get(jobController.index)
+  // , viewController.showJobs)
+  .post(jobController.create, viewController.goToHomePage);
+
+jobRouter.use(viewController.showJSON, (err, req, res, next) => {
   res.sendStatus(404);
 });
 

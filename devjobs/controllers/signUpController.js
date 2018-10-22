@@ -1,16 +1,76 @@
-const db = require('../models');
+const { User } = require('../models');
 
 module.exports = {
-  addUser(req, res, next) {
-    db.User.create({
-      username: req.body.username,
-      password: req.body.password,
-      name: req.body.name,
-      description: req.body.description,
-      zipcode: req.body.zipcode,
-      industryWanted: req.body.industryWanted,
-      titleWanted: req.body.titleWanted,
-    });
-    next();
+  async create(req, res, next) {
+    try {
+      const {
+        username, password, name, description, zipcode, industryWanted, titleWanted,
+      } = req.body;
+      const newUser = await User.create({
+        username, password, name, description, zipcode, industryWanted, titleWanted,
+      });
+      res.locals.user = newUser;
+      next();
+    } catch (err) {
+      next(err);
+    }
+  },
+
+  async getOne(req, res, next) {
+    try {
+      const id = Number.parseInt(req.params.user_id, 10);
+      res.locals.Users = await User.findOne({
+        where: { id },
+        rejectOnEmpty: true,
+      });
+      next();
+    } catch (e) {
+      next(e);
+    }
+  },
+
+  async index(req, res, next) {
+    try {
+      res.locals.users = await User.findAll({
+        rejectOnEmpty: true,
+      });
+      next();
+    } catch (e) {
+      next(e);
+    }
+  },
+
+  async update(req, res, next) {
+    try {
+      const id = Number.parseInt(req.params.user_id, 10);
+      const {
+        companyImage, companyName, UserTitle, description, location, type,
+      } = req.body;
+      const [, updatedUser] = await User.update({
+        companyImage, companyName, UserTitle, description, location, type,
+      }, {
+        where: { id },
+        limit: 1,
+        rejectOnEmpty: true,
+        returning: true,
+      });
+      res.locals.user = updatedUser;
+      next();
+    } catch (err) {
+      next(err);
+    }
+  },
+
+  async destroy(req, res, next) {
+    try {
+      const id = Number.parseInt(req.params.user_id, 10);
+      await User.destroy({
+        where: { id },
+        limit: 1,
+      });
+      next();
+    } catch (err) {
+      next(err);
+    }
   },
 };

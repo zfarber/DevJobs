@@ -6,6 +6,7 @@ const db = new Sequelize({
   define: {
     underscored: true,
     returning: true,
+    rejectOnEmpty: true,
   },
 });
 
