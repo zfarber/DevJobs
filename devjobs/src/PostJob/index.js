@@ -1,5 +1,6 @@
 import React from 'react';
 import brand from '../nav/logo128.png';
+import DeleteJob from '../DeleteJob';
 
 const PostJob = () => (
   <section className="hero is-light is-fullheight">
@@ -39,19 +40,19 @@ const PostJob = () => (
                 </div>
               </div>
               <div class="field">
-  <div class="control">
-    <div class="select is-primary">
-      <select name="type">
-        <option>Type</option>
-        <option>Full Time</option>
-        <option>Part Time</option>
-        <option>Remote </option>
-        <option>Contract </option>
-      </select>
-    </div>
-  </div>
-</div>
-              <button className="button is-block is-info is-large is-fullwidth">Post Job</button>
+                <div class="control">
+                  <div class="select is-primary">
+                    <select name="type">
+                      <option>Type</option>
+                      <option>Full Time</option>
+                      <option>Part Time</option>
+                      <option>Remote </option>
+                      <option>Contract </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <button className="button is-block is-info is-large is-fullwidth">Update Job</button>
             </form>
           </div>
         </div>

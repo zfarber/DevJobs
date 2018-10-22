@@ -12,7 +12,7 @@ const UpdateJob = () => (
             <figure className="avatar is-128x128">
               <img src={brand}/>
             </figure>
-            <form method="PUT" action="/job">
+            <form method="PUT" action={`/job/${job.id}/?_method=PUT`}>
               <div className="field">
                 <div className="control">
                   <input className="input is-large" type="text" name="companyName" placeholder="Company Name" autoFocus="" />
