@@ -3,6 +3,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const hotMiddleware = require('./environment');
 
+// REQUIRE MODELS
+const { Job } = require('./models');
+
 // start express
 const app = express();
 
@@ -19,7 +22,6 @@ const jobRouter = require('./routes/jobRouter');
 // ROUTE HANDLERS
 app.use('/signup', signUpRouter);
 app.use('/job', jobRouter);
-
 
 // GLOBAL ERROR HANDLER
 app.use((err, req, res, next) => {
