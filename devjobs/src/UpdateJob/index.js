@@ -51,7 +51,7 @@ const UpdateJob = () => (
     </div>
   </div>
 </div>
-              <button className="button is-block is-info is-large is-fullwidth">Post Job</button>
+              <button className="button is-block is-info is-large is-fullwidth">Update Job</button>
             </form>
           </div>
         </div>

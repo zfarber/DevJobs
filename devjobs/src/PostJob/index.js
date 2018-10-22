@@ -21,22 +21,27 @@ const PostJob = () => (
               </div>
               <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Job" name="jobTitle" placeholder="Job Title" />
+                  <input className="input is-large" type="text" name="jobTitle" placeholder="Job Title" />
                 </div>
               </div>
               <div className="field">
                 <div className="control">
-                  <textarea class="textarea" name="description" placeholder="Job Description"></textarea>
+                  <textarea class="textarea" name="text" placeholder="Job Description"></textarea>
                 </div>
               </div>
                 <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Job" name="location" placeholder="Zipcode" />
+                  <input className="input is-large" type="text" name="location" placeholder="Zipcode" />
                 </div>
               </div>
                 <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Job" name="companyImage" placeholder="Logo Image URL" />
+                  <input className="input is-large" type="text" name="companyImage" placeholder="Logo Image URL" />
+                </div>
+              </div>
+               <div className="field">
+                <div className="control">
+                  <input className="input is-large" type="text" name="jobURL" placeholder="Job URL" />
                 </div>
               </div>
               <div class="field">
@@ -52,7 +57,7 @@ const PostJob = () => (
                   </div>
                 </div>
               </div>
-              <button className="button is-block is-info is-large is-fullwidth">Update Job</button>
+              <button className="button is-block is-info is-large is-fullwidth">Post Job</button>
             </form>
           </div>
         </div>

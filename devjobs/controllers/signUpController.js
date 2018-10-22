@@ -4,10 +4,10 @@ module.exports = {
   async create(req, res, next) {
     try {
       const {
-        username, password, name, description, zipcode, industryWanted, titleWanted,
+        username, password, name, description, zipcode, industryWanted, titleWanted, portfolio_url,
       } = req.body;
       const newUser = await User.create({
-        username, password, name, description, zipcode, industryWanted, titleWanted,
+        username, password, name, description, zipcode, industryWanted, titleWanted, portfolio_url,
       });
       res.locals.user = newUser;
       next();
@@ -44,10 +44,10 @@ module.exports = {
     try {
       const id = Number.parseInt(req.params.user_id, 10);
       const {
-        companyImage, companyName, UserTitle, description, location, type,
+        companyImage, companyName, UserTitle, description, location, type, portfolio_url,
       } = req.body;
       const [, updatedUser] = await User.update({
-        companyImage, companyName, UserTitle, description, location, type,
+        companyImage, companyName, UserTitle, description, location, type, portfolio_url,
       }, {
         where: { id },
         limit: 1,

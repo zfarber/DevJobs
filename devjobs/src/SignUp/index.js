@@ -20,25 +20,31 @@ const SignUp = () => (
               </div>
               <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Job" name="password" placeholder="Password" />
+                  <input className="input is-large" type="text" name="password" placeholder="Password" />
                 </div>
               </div>
               <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Job" name="name" placeholder="Full Name" />
+                  <input className="input is-large" type="text" name="name" placeholder="Full Name" />
+                </div>
+              </div>
+              <div className="field">
+                <div className="control">
+                  <input className="input is-large" type="text" name="portfolio_url" placeholder="Portfolio URL" />
                 </div>
               </div>
                 <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Zipcode" name="zipcode" placeholder="Zipcode" />
+                  <input className="input is-large" type="text" name="zipcode" placeholder="Zipcode" />
                 </div>
               </div>
                 <div className="field">
                 <div className="control">
-                  <input className="input is-large" type="Deired Title" name="description" placeholder="Desired Job Title" />
+                  <input className="input is-large" type="text" name="description" placeholder="Desired Job Title" />
                 </div>
               </div>
               <div class="field">
+
   <div class="control">
     <div class="select is-primary">
       <select name="industryWanted">

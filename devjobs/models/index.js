@@ -42,6 +42,7 @@ const User = db.define('user', {
   description: Sequelize.STRING(255),
   zipcode: Sequelize.STRING(5),
   industryWanted: Sequelize.STRING(128),
+  portfolio_url: Sequelize.STRING(128),
   titleWanted: Sequelize.STRING(128),
 });
 
@@ -51,6 +52,7 @@ const Job = db.define('job', {
   jobTitle: Sequelize.STRING(64),
   description: Sequelize.STRING(),
   location: Sequelize.STRING(64),
+  jobURL: Sequelize.STRING(128),
   type: Sequelize.STRING(16),
 });
 

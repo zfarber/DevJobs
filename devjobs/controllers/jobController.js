@@ -4,10 +4,10 @@ module.exports = {
   async create(req, res, next) {
     try {
       const {
-        companyImage, companyName, jobTitle, description, location, type,
+        companyImage, companyName, jobTitle, description, location, type, jobURL,
       } = req.body;
       const newJob = await Job.create({
-        companyImage, companyName, jobTitle, description, location, type,
+        companyImage, companyName, jobTitle, description, location, type, jobURL,
       });
       res.locals.job = newJob;
       next();
@@ -44,10 +44,10 @@ module.exports = {
     try {
       const id = Number.parseInt(req.params.job_id, 10);
       const {
-        companyImage, companyName, jobTitle, description, location, type,
+        companyImage, companyName, jobTitle, description, location, type, jobURL,
       } = req.body;
       const [, updatedJob] = await Job.update({
-        companyImage, companyName, jobTitle, description, location, type,
+        companyImage, companyName, jobTitle, description, location, type, jobURL,
       }, {
         where: { id },
         limit: 1,
