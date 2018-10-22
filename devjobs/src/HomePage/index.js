@@ -16,10 +16,10 @@ const HomePage = (props) => {
         <div className="container has-text-centered">
           <div className="column is-6 is-offset-3">
             <h1 className="title">
-              Find Development Jobs.
+              Find Jobs in Development.
             </h1>
             <h2 className="subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Join Our Talented Pool Of Applicants To Land A Job As A Web Developer.
             </h2>
             <div className="box">
               <div className="field is-grouped">
