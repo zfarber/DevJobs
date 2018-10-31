@@ -5,14 +5,14 @@ import 'bulma';
 import {
   Columns, Column, Section, Container,
 } from 'bloomer';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Nav from '../Nav';
 import HomePage from '../HomePage';
 import Jobs from '../Jobs';
 import SignUp from '../SignUp';
 import UserLogin from '../UserLogin';
 import PostJob from '../PostJob';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const App = () => (

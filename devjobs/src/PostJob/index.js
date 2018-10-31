@@ -11,7 +11,7 @@ const PostJob = () => (
           <p className="subtitle has-text-black">Post jobs for FREE</p>
           <div className="box">
             <figure className="avatar is-128x128">
-              <img src={brand}/>
+              <img src={brand} />
             </figure>
             <form method="POST" action="/job">
               <div className="field">
@@ -26,27 +26,27 @@ const PostJob = () => (
               </div>
               <div className="field">
                 <div className="control">
-                  <textarea class="textarea" name="text" placeholder="Job Description"></textarea>
+                  <textarea className="textarea" name="text" placeholder="Job Description" />
                 </div>
               </div>
-                <div className="field">
+              <div className="field">
                 <div className="control">
                   <input className="input is-large" type="text" name="location" placeholder="Zipcode" />
                 </div>
               </div>
-                <div className="field">
+              <div className="field">
                 <div className="control">
                   <input className="input is-large" type="text" name="companyImage" placeholder="Logo Image URL" />
                 </div>
               </div>
-               <div className="field">
+              <div className="field">
                 <div className="control">
                   <input className="input is-large" type="text" name="jobURL" placeholder="Job URL" />
                 </div>
               </div>
-              <div class="field">
-                <div class="control">
-                  <div class="select is-primary">
+              <div className="field">
+                <div className="control">
+                  <div className="select is-primary">
                     <select name="type">
                       <option>Type</option>
                       <option>Full Time</option>

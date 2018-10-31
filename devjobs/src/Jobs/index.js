@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom'
+import { withRouter } from 'react-router-dom';
 import axios from 'axios';
 import ReactHTMLParser from 'react-html-parser';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -23,7 +23,7 @@ class Jobs extends Component {
   }
 
   async getJobs() {
-    const apiEndpoint = 'https://jobs.github.com/positions.json?location=' + this.state.zipCode;
+    const apiEndpoint = `https://jobs.github.com/positions.json?location=${this.state.zipCode}`;
     const response = await axios.get(apiEndpoint);
     const jobs = response.data;
     console.log(jobs);
@@ -41,15 +41,19 @@ class Jobs extends Component {
             <div className="box">
               <article className="media">
                 <div className="media-left" />
-                <figure class="image is-48x48">
-          <img src={jobs.company_logo} alt=""/>
-        </figure>
+                <figure className="image is-48x48">
+                  <img src={jobs.company_logo} alt="" />
+                </figure>
                 <div className="media-content">
                   <div className="content">
                     <p>
                       <strong>{jobs.title}</strong>
                       {' '}
-                      <small>{jobs.location} {jobs.type}</small>
+                      <small>
+                        {jobs.location}
+                        {' '}
+                        {jobs.type}
+                      </small>
                       {' '}
                       <br />
                       <small>
@@ -67,19 +71,21 @@ Created:
                         </i>
                       </small>
                       <br />
-                    {ReactHTMLParser(jobs.description)}
+                      {ReactHTMLParser(jobs.description)}
                     </p>
                   </div>
                   <nav className="level is-mobile">
                     <div className="level-left">
                       <a className="level-item" href={jobs.url} aria-label="apply">
                         <span className="icon is-small">
-                       <FontAwesomeIcon icon={faSignInAlt} /> </span>
+                          <FontAwesomeIcon icon={faSignInAlt} />
+                        </span>
                       </a>
 
-                       <a className="level-item" aria-label="apply">
+                      <a className="level-item" aria-label="apply">
                         <span className="icon is-small">
-                       <FontAwesomeIcon icon={faHeart} /> </span>
+                          <FontAwesomeIcon icon={faHeart} />
+                        </span>
                       </a>
                     </div>
                   </nav>
