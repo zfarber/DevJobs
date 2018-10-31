@@ -95,10 +95,10 @@ const HomePage = props => (
                 <input name="zipcode" className="input" type="text" placeholder="Enter your zipcode" />
                 <div>
                   <p className="control has-text-centered">
-                      <button className="button is-info" type="submit">
+                    <button className="button is-info" type="submit">
                         Find Jobs
-                      </button>
-                    </p>
+                    </button>
+                  </p>
                 </div>
               </form>
             </div>

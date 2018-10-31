@@ -13,7 +13,7 @@ class Jobs extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      jobs: [],
+      jobs:    [],
       zipCode: this.props.location.search.split('=')[1],
     };
   }

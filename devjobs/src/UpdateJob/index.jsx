@@ -1,5 +1,5 @@
 import React from 'react';
-import brand from '../nav/logo128.png';
+import brand from '../Nav/logo128.png';
 
 const UpdateJob = () => (
   <section className="hero is-light is-fullheight">
