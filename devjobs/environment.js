@@ -15,7 +15,7 @@ module.exports = (env) => {
 
 
       stack.push(middleware(compiler, {
-        noInfo: true,
+        noInfo:     true,
         publicPath: webpackConfig.output.publicPath,
       }));
 
